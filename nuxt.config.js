@@ -38,7 +38,7 @@ export default {
   buildModules: ["@nuxt/postcss8"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [["cookie-universal-nuxt", { alias: "cookiz" }]],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
