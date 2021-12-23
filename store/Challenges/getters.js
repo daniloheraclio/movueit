@@ -1,0 +1,11 @@
+export default {
+  challengesLength: (state) => state.allChallenges.length,
+  currentXpPercentage: (state) => {
+    const percentage = (state.xp.current / state.xp.end) * 100;
+    return Number(percentage.toFixed(2));
+  },
+  currentChallenge: (state) =>
+    typeof state.currentChallengesIndex === "number"
+      ? state.allChallenges[state.currentChallengesIndex]
+      : null,
+};

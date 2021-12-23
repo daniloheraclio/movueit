@@ -1,4 +1,4 @@
-import { MUTATIONS_CH } from "../store/Challenges/index";
+import { MUTATIONS_CH } from "./index";
 
 export default {
   [MUTATIONS_CH.SET_CURRENT_CHALLENGE_INDEX](state, index) {
@@ -9,30 +9,31 @@ export default {
   },
   [MUTATIONS_CH.COMPLETE_CHALLENGE](state, xpAmount) {
     const { current, end } = state.xp;
-    const currentTotalXp = current + xpAmount;
-    const shouldLevelUp = currentTotalXp >= end;
+    const currentTotalXP = current + xpAmount;
+    const shouldLevelUp = currentTotalXP >= end;
 
     state.completedChallenges += 1;
 
     if (shouldLevelUp) {
       state.level += 1;
 
-      const remainingXp = currentTotalXp - end;
-      const experinceToNextLevel = Math.pow((state.level + 1) * 4, 2);
+      const remainingXp = currentTotalXP - end;
+      const experienceToNextLevel = Math.pow((state.level + 1) * 4, 2);
 
       state.xp = {
         current: remainingXp,
         start: 0,
-        end: experinceToNextLevel,
+        end: experienceToNextLevel,
       };
 
       state.isLevelUpModalOpen = true;
+
       return;
     }
 
     state.xp = {
       ...state.xp,
-      current: currentTotalXp,
+      current: currentTotalXP,
     };
   },
   [MUTATIONS_CH.SAVE_COOKIE_DATA](state, cookie) {
