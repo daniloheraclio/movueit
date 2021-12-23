@@ -1,4 +1,4 @@
-const MINUTES = 0.05;
+const MINUTES = 25;
 
 export const MUTATIONS_CT = {
   SET_TIME: "SET_TIME",
