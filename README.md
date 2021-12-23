@@ -38,7 +38,7 @@ This project was developed using [VueJs](https://vuejs.org/), [NuxtJs](https://n
 
 ---
 
-# Executando o projeto
+# Running the project
 
 ## Requirement
 
