@@ -4,7 +4,7 @@
 
 Application built during Nuxt Levue Week promoted on Maiatto Dev channel. [Maiatto Dev](https://www.youtube.com/channel/UCWRzzG0D8OwMVu6FKKpHzIA).
 
-You can check the demo in: [DEMO](https://movueit-nuxt-rho.vercel.app/)
+You can check the demo in: [DEMO](https://movueit-nuxt-demo.vercel.app/)
 
 # Movue It
 
