@@ -24,7 +24,7 @@ Move It is an application originally developed during Next Level Week, promoted 
 
 <img alt="Time out" src="assets/screenshots/movueit_prompt.png">
 
-### Mobile - Mobile
+### Mobile
 
 <p align="center">
   <img alt="Mobile" src="assets/screenshots/movueit_mobile.png">
@@ -40,7 +40,7 @@ This project was developed using [VueJs](https://vuejs.org/), [NuxtJs](https://n
 
 # Running the project
 
-## Requirement
+## Requirements
 
 Before starting, you must have the tools installed. [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/) and a code editor of your choice.
 
